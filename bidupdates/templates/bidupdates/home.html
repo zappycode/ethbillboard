@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+    <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script type="text/javascript" src="{% static 'bundle.js' %}"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Internet Billboard</title>
+
+  <!-- Changes go here -->
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/grayscale.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Internet Billboard</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase" id="message">"May the ETH gods smile upon you"</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5" id="boughtFor">Today's billboard was bought for 1337 Wei</h2>
+      </div>
+    </div>
+  </header>
+
+  <section class="text-center pt-3">
+
+    <h2>Want tomorrow's billboard? Bid below!</h2>
+    <h4>Auction ends in <span id="countdown" class="timer"></span></h4>
+
+        <div>
+          <label for="name">Message:</label>
+          <textarea type="text" id="messageinput" name="user_name"></textarea>
+        </div>
+
+        <div>
+          <label for="msg">Bid Amount in WEI:</label>
+          <input id="bidinput" name="user_message">
+        </div>
+       
+        <div class="button">
+          <button type="submit" id="submitbidbutton">Place Bid</button>
+        </div>
+  </div>
+
+<section class="container text-center pt-5">
+  <h3>Today's Bids</h3>
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Bid</th>
+      <th scope="col">Message</th>
+    </tr>
+  </thead>
+  <tbody id="dasTable"></tbody>
+</table>
+</div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/grayscale.min.js' %}"></script>
+
+</body>
+
+</html>
