@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')w5pb)h=4v=u8xgk1ag&)8u^&otk3s)+xph8%^$4ld=4*g@cym'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arcane-wildwood-83228.herokuapp.com','ethbillboard.fun','www.ethbillboard.fun']
 
 
 # Application definition
